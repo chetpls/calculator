@@ -1,0 +1,117 @@
+body{
+    display: flex;
+    margin:0;
+    justify-content: center;   
+    align-items: center;
+    font-family: "Press Start 2P",sans-serif;
+    background-color: #081615;
+    padding-top: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #545c64;
+    gap:20px;
+    box-shadow: 0 4px 2px 1px black;
+    border-radius: 10px;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    background-color: #000;
+    border: 2px solid black;
+    box-shadow: 0 4px 2px 1px black;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 24px;
+    background-color: #707b85;
+    flex-direction: column;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #707b85;
+    border: 2px solid black;
+    box-shadow: 0 4px 2px 1px black;
+    border-radius: 10px;
+}
+
+.button-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    /* box-shadow: 0 0.2rem 0.2rem -0.2rem #0b0b0b; */
+    box-shadow: 0 4px 2px 1px black;
+    border-radius: 8px;
+    outline:none;
+    padding:0px;
+    transition: all 0.3s ease;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 24px;
+}
+
+/* Apply styles when the button is clicked */
+button:active {
+    transform: scale(0.9); /* You can adjust the scale as needed */
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+    color: #fff; /* Change text color to white */
+}
+
+/* Set cursor to pointer when button is focused */
+button:hover {
+    cursor: pointer;
+}
+
+/* Define button styles */
+.green-button {
+    background-color: #2ec37c;
+}
+
+.yellow-button {
+    background-color: #ffd600;
+}
+
+.orange-button {
+    background-color: #e76724;
+}
+
+.main-display,
+.secondary-display {
+    color: #1dcd31;
+    padding: 5px;
+    width: calc(100% - 10px); /* Adjusted width to accommodate padding */
+    height: 30%;
+    text-align: end;
+    background-color: #000;
+    border-radius: 10px 10px 0 0; /* Top border rounded, bottom not */
+    font-size: 16px;
+    font-family: "Press Start 2P";
+    border: none; /* Remove the border */
+    border-bottom: 2px solid black; /* Add bottom border for separation */
+}
+
+.main-display {
+    height: 70%;
+    font-size:32px;
+    border-radius: 0 0 10px 10px; /* Bottom border rounded, top not */
+}
+
